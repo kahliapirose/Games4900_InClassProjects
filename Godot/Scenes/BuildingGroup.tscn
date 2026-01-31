@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgyoya5mhvfbv"]
+
+[ext_resource type="ArrayMesh" uid="uid://c71c6q6ssr8fr" path="res://Addons/Models/OBJ format/building-skyscraper-a.obj" id="1_xy2od"]
+[ext_resource type="ArrayMesh" uid="uid://b8m8gsv55ssdd" path="res://Addons/Models/OBJ format/building-skyscraper-b.obj" id="2_7847t"]
+
+[node name="BuildingGroup" type="Node3D"]
+
+[node name="SkyscrapperA" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.1463566)
+mesh = ExtResource("1_xy2od")
+
+[node name="SkyscrapperB" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3067018, 0, -1.321445)
+mesh = ExtResource("2_7847t")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bh6lc15l548sc"]
+
+[ext_resource type="Script" uid="uid://ctmlhjb3p8it0" path="res://Scripts/greeter.gd" id="1_1xche"]
+
+[node name="Greeter" type="Node3D"]
+script = ExtResource("1_1xche")

@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://8xm8kal8tucw"]
+
+[ext_resource type="PackedScene" uid="uid://knce1nw3xgf5" path="res://Addons/Models/FBX format/building-a.fbx" id="1_bnbiq"]
+[ext_resource type="PackedScene" uid="uid://cntfj40p1a454" path="res://Addons/Models/FBX format/building-b.fbx" id="2_3xjcq"]
+[ext_resource type="PackedScene" uid="uid://cvlx6wwghpe33" path="res://Addons/Models/FBX format/building-c.fbx" id="3_e2jlu"]
+[ext_resource type="PackedScene" uid="uid://cdfdigslijsa2" path="res://Scenes/Activator.tscn" id="4_rsqw6"]
+[ext_resource type="PackedScene" uid="uid://bgyoya5mhvfbv" path="res://Scenes/BuildingGroup.tscn" id="5_oej6j"]
+[ext_resource type="PackedScene" uid="uid://bh6lc15l548sc" path="res://Scenes/Greeter.tscn" id="6_ec6sk"]
+
+[node name="Main Scene" type="Node3D"]
+
+[node name="building-a" parent="." instance=ExtResource("1_bnbiq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.515236, 1.1920929e-07, 0.48065925)
+
+[node name="building-b" parent="." instance=ExtResource("2_3xjcq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50801647, 0, -0.49770594)
+
+[node name="building-c" parent="." instance=ExtResource("3_e2jlu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5258045, 1.1920929e-07, -0.5630393)
+
+[node name="Activator" parent="." node_paths=PackedStringArray("HelloComponent") instance=ExtResource("4_rsqw6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.72697556, 0, 1.5320742)
+HelloComponent = NodePath("../Greeter")
+
+[node name="BuildingGroup" parent="." instance=ExtResource("5_oej6j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6995919, 0, -0.3190782)
+
+[node name="Greeter" parent="." instance=ExtResource("6_ec6sk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.48731554, 0, 1.0193703)

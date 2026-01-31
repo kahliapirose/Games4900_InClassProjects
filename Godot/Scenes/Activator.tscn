@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdfdigslijsa2"]
+
+[ext_resource type="Script" uid="uid://dsuwmvx7cwjtl" path="res://Scripts/activator.gd" id="1_cibah"]
+
+[node name="Activator" type="Node3D"]
+script = ExtResource("1_cibah")
